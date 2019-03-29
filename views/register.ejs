@@ -1,0 +1,33 @@
+<% include partial/header %>
+<% include partial/navbar %>
+
+<div class="register-form">
+  <div class="login">
+    <h1 class="register-form__header">Add user</h1>
+    <form action="/users/add" id="form" method="POST">
+      <label for="">Name</label>
+      <input type="text" name="name" />
+
+      <label for="">Username</label>
+      <input type="text" name="username" />
+
+      <label for="">Email</label>
+      <input type="email" name="email" />
+
+      <label for="">Street</label>
+      <input type="text" name="street" />
+
+      <label for="">Suite</label>
+      <input type="text" name="suite" />
+
+      <label for="">City</label>
+      <input type="text" name="city" />
+
+      <label for="">Password</label>
+      <input type="password" name="password" />
+      <br>
+      <input type="submit" value="register" />
+    </form>
+  </div>
+</div>
+<% include partial/footer %>

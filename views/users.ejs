@@ -1,0 +1,32 @@
+<% include partial/header %>
+<button id="logout">logout</button>
+<div class="users-list">
+  <h2 class="users-header"><%= title %></h2>
+
+  <ul class="users-list__items">
+    <% users.forEach(user=>{ %>
+    <li>Name:<%= user.name %> </li>
+    <li>Username:<%= user.username %> </li>
+    <li>Email:<%= user.email %> </li>
+    <li>Address:</li>
+    <li>Street:<%= user.address.street %></li>
+    <li>Suite:<%= user.address.suite %></li>
+    <li>City:<%= user.address.city %></li>
+    <form action="/users/delete/<%=user.id%>" method="post">
+      <input type="hidden" value="<%=user.id%>">
+      <input type="submit" value="delete">
+    </form>
+
+    <br>
+    <% })%>
+  </ul>
+</div>
+<script>
+  document.getElementById('logout').addEventListener('click', logout);
+
+  function logout() {
+    window.location = '/'
+  }
+</script>
+<!-- <script src=" js/main.js"> </script> -->
+<% include partial/footer %>
