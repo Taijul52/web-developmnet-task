@@ -6,11 +6,15 @@ regiser page base upon the json field and finally delete data from the json file
 For the project purpose i use nodejs and express and ejs template engine
 
 file structures
-public
+
+#public
   -assests
     -main.css
- views
+ #views
   -index.esj #contain login page
   -register.ejs # add user to the json file
   -user.ejs #show the list of user from the json file
+  
+ #app.js #contain main logic
+ #users.json 
 
