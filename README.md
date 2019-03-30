@@ -18,7 +18,7 @@ file structures
  #app.js #contain main logic
  #users.json 
 
-note: After doing this task first i am trying to this same project using javascript and ajax. but i can not write the json file.
+note: Before doing this task first i am trying to do this same project using javascript and ajax. but i can not write the json file.
 so i am switch to nodejs . if you are interent to see the task folloe the link
 
 https://github.com/Taijul52/demo-task
